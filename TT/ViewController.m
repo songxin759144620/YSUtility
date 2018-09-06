@@ -23,6 +23,7 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
     tap.cancelsTouchesInView = NO;
     [_myView addGestureRecognizer:tap];
+    NSLog(@".......");
 }
 - (void)tapAction:(UITapGestureRecognizer *)tap{
     NSLog(@"点击");
